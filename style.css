@@ -1,5 +1,102 @@
- h1 {
-        font-style: italic;
-        text-align: center;
-        color: magenta;
-      }
+h1 {
+  font-style: italic;
+  text-align: center;
+  color: magenta;
+}
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+h1 {
+  color: #0b7dda;
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 28px;
+  margin: 0;
+}
+h2 {
+  display: inline-block;
+  list-style: flex;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  text-align: center;
+  color: #141516;
+  font-size: 16px;
+  font-weight: 200;
+  height: 19px;
+  line-height: 1;
+}
+div.listss {
+  padding-left: 20%;
+  padding-right: 20%;
+  text-align: center;
+}
+form.example input[type="text"] {
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+
+  background: #2196f3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.container {
+  border: #0b7dda;
+  margin: 0;
+  text-align: center;
+}
+.row {
+  text-align: center;
+}
+.city {
+  margin: 0;
+  text-align: center;
+}
+
+figure {
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+}
+img.scaled {
+  width: 100%;
+}
+.col-6 {
+  display: inline;
+}
+.weather-app {
+  border: 1px solid #dadd;
+  padding: 15px;
+  margin: 20px auto;
+  max-width: 500px;
+  border-radius: 20px;
+  background-color: #77dd77;
+}
+button {
+  border-radius: 20px;
+}

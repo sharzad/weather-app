@@ -4,14 +4,160 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <link rel="stylesheet" href="./styles.css" />
+    
+    <title>Weather</title>
   </head>
-  <body>
-    <h1>Hello Git</h1>
-    <input type="email" placeholder="enter your Email" />
-    <input type="password" placeholder="enter your password" />
-    <input type="email" value="login" name="" id="" />
-    <script src="script.js"></script>
+  <body> 
+    
+    <div class="container">
+      <div class="weather-app">
+       <form id="search-form" class="search-form">
+        <div class="row">
+            <div class="col">
+              <button class="btn btn-primarys">
+                <img
+                  src=".\src\imags\cloud.png"
+                  height="50"
+                  width="50"
+                  alt="logo-button-search"
+                />
+              </button>
+              <div class="row">
+                <div class="col-6">
+                  <input
+                    type="search"
+                    placeholder="Type a city.."
+                    autofocus="on"
+                    autocomplete="off"
+                    id="city-input"
+                    class="form-control shadow-sm"
+                  />
+                </div>
+                <div class="col-3">
+                  <input
+                    type="submit"
+                    value="Search"
+                    class="form-control btn btn-primary shadow-sm"
+                  />
+                </div>
+                <div class="col-3">
+              <button
+                class="btn btn-warning w-100"
+                id="current-location-button"
+              >
+                Current
+              </button>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <h1 id="city">Bali</h1>
+                <ul>
+                  <li id="date">Monday 21:13</li>
+                  <li id="description">Partly Cloudy</li>
+                </ul>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <div class="clearfix">
+                    <img
+                      src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                      alt="Cloudy icon"
+                      class="weather-icon float-left"
+                    />
+                    <div class="float-left">
+                      <span class="temperature" id="temperature">19</span
+                      ><span class="units">
+                        <a href="#" id="celsius-link">°C</a> |
+                        <a href="#" id="fahrenheit-link">°F</a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6">
+                  <br />
+                  <ul>
+                    <li>Humidity: <span id="humidity">80</span>%</li>
+                    <li>Wind: <span id="wind">2</span> km/h</li>
+                    <li><span id="discription"></span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class=" row"> <div class="col">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/869/869869.png"
+                height="50"
+                width="50"
+                alt="day1"
+              />
+              <figcaption>Monday</figcaption>
+          </div>
+            <div class="col">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/616/616511.png"
+                height="50"
+                width="50"
+                alt="day2"
+              />
+              <figcaption>Tuesday</figcaption>
+            </div>
+
+            <div class="col">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/8775/8775519.png"
+                height="50"
+                width="50"
+                alt="day3"
+              />
+              <figcaption>Wednesday</figcaption>
+            </div>
+
+            <div class="col">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/7403/7403570.png"
+                height="50"
+                width="50"
+                alt="day4"
+              />
+              <figcaption>Thursday</figcaption>
+            </div>
+
+            <div class="col">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/5370/5370498.png"
+                height="50"
+                width="50"
+                alt="day5"
+              />
+              <figcaption>Friday</figcaption>
+              
+             </div></div>
+         
+           </div>
+      </form>
+                  
+     </div>
+    </div><p>free source
+    <a href="" id="source-code"> code</a> available </p>
+   
+    <script src="src/script.js"></script>
   </body>
 </html>
